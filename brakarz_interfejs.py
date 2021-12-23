@@ -28,6 +28,7 @@ class GUIManager:
         self.complete_path = None
 
     def initialize_window(self, layout):
+        # Window initialization
         try:
             self.window_handler = sg.Window(self.window_title, layout, location=(0, 0), finalize=True,
                                             element_justification='c')
